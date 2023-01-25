@@ -6,7 +6,8 @@
 // must implemet this interface
 // this is what each game class depends on
 
-public interface Player{
+public interface Player {
   public String getName();
+
   public void addPoints(int points);
 }

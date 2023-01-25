@@ -1,16 +1,16 @@
+import java.util.*;
+
 /**
  * @author user7455602
  */
 
-import java.util.*;
-
 public class Trivia extends TwoPlayerGame {
-  // questions for trivia game
+
   ArrayList<TriviaQuestion> questions = new ArrayList<>();
 
   public void playGame() {
     addQuestions();
-    
+
     Scanner scanner = new Scanner(System.in);
 
     System.out.printf("%s & %s play Trivia!\n\n",
@@ -44,9 +44,9 @@ public class Trivia extends TwoPlayerGame {
         }
 
         // if guess is bad
-        if (guess > 0 && guess <= 4 ) {
+        if (guess > 0 && guess <= 4) {
           // check the players guess and add points
-          if (question.isCorrect(guess - 1)) {
+          if (question.isCorrect(guss - 1)) {
             System.out.printf("%s, you're RIGHT!\n", currentPlayer.getName());
             currentPlayer.addPoints(1);
           } else {
@@ -73,7 +73,7 @@ public class Trivia extends TwoPlayerGame {
 
   public Trivia(Player player1, Player player2) {
     super(player1, player2);
-    //addQuestions();
+    // addQuestions();
   }
 
   // question list

@@ -1,8 +1,7 @@
 import java.util.*;
-//import java.io.*;
 
 /**
- * @user7455602
+ * @author user7455602
  */
 
 // NOTE: I modified my project 2 game (memory) to be a class and made it a 2

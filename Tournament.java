@@ -1,19 +1,19 @@
+import java.util.ArrayList;
+
 /**
  * @author user7455602
  */
 
-import java.util.ArrayList;
-
-// The Tournament class accepts 2 tournament players and 
+// The Tournament class accepts 2 tournament players and
 // add games to a list to be played
 
-public class Tournament{
+public class Tournament {
   TournamentPlayer player1;
   TournamentPlayer player2;
-  
+
   ArrayList<Game> games;
 
-  public Tournament(TournamentPlayer player1, TournamentPlayer player2){
+  public Tournament(TournamentPlayer player1, TournamentPlayer player2) {
     // set the players for the tournament
     this.player1 = player1;
     this.player2 = player2;
@@ -29,22 +29,21 @@ public class Tournament{
     games.add(new RockPaperScissors(player1, player2));
 
   }
-  
-  public void playGames(){
-    
-    for(Game game: games){
+
+  public void playGames() {
+
+    for (Game game : games) {
       // print the instructions (do we want to do this every time?)
       game.printInstructions();
-      // play the game 
+      // play the game
       game.playGame();
 
       // outputs a status inbetween each game
-      System.out.printf("\nLets have an update on the scores!\n\nScores:\n%s : %d\n%s : %d\n\n", 
-                     player1.getName(),
-                     player1.getPoints(),
-                     player2.getName(),
-                     player2.getPoints()
-                     );
+      System.out.printf("\nLets have an update on the scores!\n\nScores:\n%s : %d\n%s : %d\n\n",
+          player1.getName(),
+          player1.getPoints(),
+          player2.getName(),
+          player2.getPoints());
 
     }
   }

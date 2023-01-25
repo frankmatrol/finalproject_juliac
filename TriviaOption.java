@@ -7,16 +7,16 @@ public class TriviaOption {
   private boolean isAnswer;
   private String option;
 
-  public TriviaOption(boolean isAnswer, String option){
+  public TriviaOption(boolean isAnswer, String option) {
     this.isAnswer = isAnswer;
     this.option = option;
   }
 
-  public boolean isAnswer(){
+  public boolean isAnswer() {
     return isAnswer;
   }
 
-  public String getOption(){
+  public String getOption() {
     return option;
   }
 }

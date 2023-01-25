@@ -1,24 +1,14 @@
+import java.util.Random;
+import java.util.Scanner;
+
 /**
  * @author user7455602
  */
 
-// NOTE: You can see my example in this file, RockPaperScissors,
-// TicTacToe and Trivia. 
-// Both your Poker and War game classes should:
-// 1. extend the TwoPlayerGame class
-// 2. have a constructor that accepts and calls super with player1 and player2 
-// 3. have a printInstructions() function
-// 4. have a play game function
-// 5. you can get the names of the players with the .getName() function
-// 6. you can add points to a given player with the .addPoints() function
-// that's all any game should need.
-// *playGame() should play 1 round of a game*
-
-import java.util.Random;
-import java.util.Scanner;
-
 // the Rock Paper Scissors game
-// Modified to a class from my project 1 JC
+// Modified to a class from my project 1
+// but for 2 players
+
 public class RockPaperScissors extends TwoPlayerGame {
 
   private String rock = "rock";

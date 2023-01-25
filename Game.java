@@ -7,5 +7,6 @@
 
 public interface Game {
   public void playGame();
+
   public void printInstructions();
 }
