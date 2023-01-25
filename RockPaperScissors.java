@@ -74,7 +74,7 @@ public class RockPaperScissors extends TwoPlayerGame {
       case 1, 2, 3: // only valid options
         String computerPick = options[getComputerPick(numberOfOptions)];
         String humanPick = options[num];
-        System.out.printf("You picked %s, I picked %s.\n", humanPick, computerPick);
+        System.out.printf("You picked %s, computer picked %s.\n", humanPick, computerPick);
 
         if (humanPick.equals(computerPick)) {
           System.out.println("It is a tie!");

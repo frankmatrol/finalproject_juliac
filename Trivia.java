@@ -46,7 +46,7 @@ public class Trivia extends TwoPlayerGame {
         // if guess is bad
         if (guess > 0 && guess <= 4) {
           // check the players guess and add points
-          if (question.isCorrect(guss - 1)) {
+          if (question.isCorrect(guess - 1)) {
             System.out.printf("%s, you're RIGHT!\n", currentPlayer.getName());
             currentPlayer.addPoints(1);
           } else {
