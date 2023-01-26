@@ -5,10 +5,11 @@ import java.util.Scanner;
  * @author user7455602
  */
 
-// the Rock Paper Scissors game
-// Modified to a class from my project 1
-// but for 2 players
-
+/***
+ * the Rock Paper Scissors game
+ * Modified to a class from my project 1
+ * and changed to support 2 players
+ */
 public class RockPaperScissors extends TwoPlayerGame {
 
   private String rock = "rock";
@@ -18,6 +19,14 @@ public class RockPaperScissors extends TwoPlayerGame {
   private int numberOfOptions = 3;
   private int totalRounds = 2;
   private String[] options = { "NotUsed", rock, paper, scissors };
+
+  // Constructor
+  public RockPaperScissors(Player player1, Player player2) {
+    // set the player1 and player2 into the class
+    // we're extending (TwoPlayerGame)
+    super(player1, player2);
+  }
+
 
   // play the game
   public void playGame() {
@@ -63,15 +72,13 @@ public class RockPaperScissors extends TwoPlayerGame {
           System.out.printf("\n");
         }
       }
-
     }
-
   }
 
   // evalulate the player's selection
   private int playSelection(int num) {
     switch (num) {
-      case 1, 2, 3: // only valid options
+      case 1, 2, 3: // the only valid options
         String computerPick = options[getComputerPick(numberOfOptions)];
         String humanPick = options[num];
         System.out.printf("You picked %s, computer picked %s.\n", humanPick, computerPick);
@@ -95,7 +102,7 @@ public class RockPaperScissors extends TwoPlayerGame {
   }
 
   // get computer's random pick
-  private static int getComputerPick(int options) {
+  private int getComputerPick(int options) {
     Random random = new Random();
     return random.nextInt(options) + 1;
   }
@@ -104,13 +111,7 @@ public class RockPaperScissors extends TwoPlayerGame {
   public void printInstructions() {
     System.out.println("Rock Paper Scissors!");
     System.out.println(
-        "Welcome to Rock Paper Scissors. rock = 1, paper =2, scissors = 3! You will recieve 2 points for every game you win! The order is picked randomly.");
-  }
-
-  public RockPaperScissors(Player player1, Player player2) {
-    // set the player1 and player2 into the class
-    // we're extending (TwoPlayerGame)
-    super(player1, player2);
+        "Welcome to Rock Paper Scissors. rock = 1, paper =2, scissors = 3!\nYou will recieve 2 points for every game you win! The order is picked randomly. \nPlayers take turns against the computer");
   }
 
 }

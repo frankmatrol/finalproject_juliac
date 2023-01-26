@@ -10,7 +10,6 @@ class Main {
    * Main will accept the player names for player1 and player2
    * and set them into the new Tournament.
    * Then will play the games and output the results.
-   * 
    */
   public static void main(String[] args) {
     System.out.println("Welcome to the Mini-Games Tournament!\n");
@@ -37,7 +36,7 @@ class Main {
         player2.getName(),
         player2.getPoints());
 
-    // out tie or who wins
+    // output tie or who wins
     if (player1.getPoints() == player2.getPoints()) {
       System.out.println("It's a tie!");
     } else {

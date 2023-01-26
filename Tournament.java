@@ -23,10 +23,11 @@ public class Tournament {
 
     // create and add each game to this list
     // this is the order the games will be played
+    games.add(new RockPaperScissors(player1, player2));
     games.add(new Memory(player1, player2));
     games.add(new TicTacToe(player1, player2));
     games.add(new Trivia(player1, player2));
-    games.add(new RockPaperScissors(player1, player2));
+    
 
   }
 

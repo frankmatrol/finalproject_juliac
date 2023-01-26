@@ -2,7 +2,6 @@
  * @author user7455602 - Julia Canhoto
  */
 
-
 /***
  * A player class (in our case TournamentPlayer)
  * must implement this interface
