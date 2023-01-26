@@ -1,11 +1,13 @@
 /**
- * @author user7455602
+ * @author user7455602 - Julia Canhoto
  */
 
-// A player class (in out case TournamentPlayer)
-// must implemet this interface
-// this is what each game class depends on
 
+/***
+ * A player class (in our case TournamentPlayer)
+ * must implement this interface
+ * this is what each game class depends on
+ */
 public interface Player {
   public String getName();
 

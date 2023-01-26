@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * @author user7455602
+ * @author user7455602 - Julia Canhoto
  */
 
 class Main {
@@ -9,7 +9,7 @@ class Main {
   /**
    * Main will accept the player names for player1 and player2
    * and set them into the new Tournament.
-   * Then will play the games and outout the results.
+   * Then will play the games and output the results.
    * 
    */
   public static void main(String[] args) {
@@ -37,6 +37,7 @@ class Main {
         player2.getName(),
         player2.getPoints());
 
+    // out tie or who wins
     if (player1.getPoints() == player2.getPoints()) {
       System.out.println("It's a tie!");
     } else {

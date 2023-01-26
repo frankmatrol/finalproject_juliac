@@ -1,11 +1,15 @@
 import java.util.*;
 
 /**
- * @author user7455602
+ * @author user7455602- Julia Canhoto
  */
 
-// NOTE: I modified my project 2 game (memory) to be a class and made it a 2
-// player game
+
+/***
+ * Memory Game
+ * NOTE: I modified my project 2 game (memory) to be a class and
+ * made it a 2 player game
+ */
 
 public class Memory extends TwoPlayerGame {
 
