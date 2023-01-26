@@ -15,7 +15,10 @@ Check list:
 2. compound data types other than strings : **DONE**
 3. compound data types other than arrays : **DONE**
 4. object-oriented? : **DONE**
-5. time- and space-efficient algorithms : **DONE**
+   - (all files are classes, interfaces or enumerations that use aggregation, composition or inheritance)
+6. time- and space-efficient algorithms : **DONE**
+    - looping through unsorted lists O(N) or linear time
+    - list aren't doubled or duplicated
 
 
 ## Updated UML:
