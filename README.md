@@ -10,16 +10,6 @@ This is my Mini game tournament I developed for the final culmination project fo
 
 \* These games were modified for 2 player and some (Rock paper scissors & Memory) were also made into classes. TicTacToe was already class based.
 
-Check list:
-1. MVP needs to compile and meet all the minimum requirements from Part 1 : **DONE**
-2. compound data types other than strings : **DONE**
-3. compound data types other than arrays : **DONE**
-4. object-oriented? : **DONE**
-   - (all files are classes, interfaces or enumerations that use aggregation, composition or inheritance)
-6. time- and space-efficient algorithms : **DONE**
-    - looping through unsorted lists O(N) or linear time
-    - list aren't doubled or duplicated
-
 
 ## Updated UML:
 ![Updated UML](MiniGameTournament02.jpg)
