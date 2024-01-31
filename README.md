@@ -1,4 +1,4 @@
-## Name: user7455602 - Julia Canhoto
+## Name: user7455602 - Julia C.
 
 This is my Mini game tournament I developed for the final culmination project for grade 12 Java. Two players compete in each game for points and the final score is shown at the end of the tournament.
 
